@@ -25,11 +25,11 @@ export default {
 </script>
  
  <style>
- .demo{
-     width: 100px;
-     height: 100px;
-     background-color: gray;
-     display: inline-block;
-     margin: 10px;
- }
+.demo {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  display: inline-block;
+  margin: 10px;
+}
 </style>

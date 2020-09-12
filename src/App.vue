@@ -8,11 +8,13 @@
       <!-- <Conditionals /> -->
       <!-- <Exercise5 /> -->
       <!-- <Loops /> -->
-      <Game />
+      <!-- <Game /> -->
+      <!-- <server-status></server-status> -->
+      <User />
     </div>
     <!-- <div id="app2">
       <HelloWorld />
-    </div> -->
+    </div>-->
   </div>
 </template>
 
@@ -23,7 +25,8 @@
 // import Conditionals from "./components/Conditionals";
 // import Loops from "./components/Loops";
 // import Exercise5 from "./components/Exercise5";
-import Game from "./components/Game";
+// import Game from "./components/Game";
+import User from "./components/users/User";
 export default {
   name: "App",
   components: {
@@ -33,21 +36,22 @@ export default {
     // Conditionals,
     // Loops,
     // Exercise5,
-    Game,
+    // Game,
+    User,
   },
   data: () => ({
-    title: "fulano",
+    // title: "fulano",
   }),
 };
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
