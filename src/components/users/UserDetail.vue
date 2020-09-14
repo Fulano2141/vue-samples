@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import { eventBus } from "../../main";
 export default {
   props: {
     // myName: [String, Array], // force myName to String or Array
@@ -36,6 +37,11 @@ export default {
       this.myName = "Fulano"; // On User will be with other value
       this.$emit("nameWasReset", this.myName);
     },
+  },
+  created() {
+    eventBus.$on("ageWasEdited", (data) => {
+      this.userAge = data;
+    });
   },
 };
 </script>

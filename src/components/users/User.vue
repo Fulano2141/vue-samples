@@ -4,6 +4,7 @@
     <p>I'm an awesome user!</p>
     <!-- check with this @nameWasReset-->
     <p>Name is {{name}}</p>
+    <p>Age is {{age}}</p>
     <!--  -->
     <button @click="changeName">Change my name</button>
     <hr />

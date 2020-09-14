@@ -10,7 +10,8 @@
       <!-- <Loops /> -->
       <!-- <Game /> -->
       <!-- <server-status></server-status> -->
-      <User />
+      <!-- <User /> -->
+      <AppForQuote />
     </div>
     <!-- <div id="app2">
       <HelloWorld />
@@ -19,14 +20,15 @@
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
-// import DynamicStyles from "./components/DynamicStyles";
-// import Exercise4 from "./components/Exercise4";
-// import Conditionals from "./components/Conditionals";
-// import Loops from "./components/Loops";
-// import Exercise5 from "./components/Exercise5";
-// import Game from "./components/Game";
-import User from "./components/users/User";
+// import HelloWorld from "./components/basic/HelloWorld.vue";
+// import DynamicStyles from "./components/basic/DynamicStyles";
+// import Exercise4 from "./components/basic/Exercise4";
+// import Conditionals from "./components/basic/Conditionals";
+// import Loops from "./components/basic/Loops";
+// import Exercise5 from "./components/basic/Exercise5";
+// import Game from "./components/basic/Game";
+// import User from "./components/users/User";
+import AppForQuote from "./components/advanceComponents/AppForQuote";
 export default {
   name: "App",
   components: {
@@ -37,7 +39,8 @@ export default {
     // Loops,
     // Exercise5,
     // Game,
-    User,
+    // User,
+    AppForQuote,
   },
   data: () => ({
     // title: "fulano",

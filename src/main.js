@@ -19,11 +19,28 @@
 
 // // https://jsfiddle.net/smax/9a2k6cja/2/
 //  =====================================================
+// import Vue from 'vue'
+// import App from './App.vue'
+// import Home from './components/basic/Home.vue'
+
+// Vue.component('server-status', Home)
+
+// export const eventBus = new Vue({
+//   methods: {
+//     changeAge(age) {
+//       this.$emit('ageWasEdited', age);
+//     }
+//   }
+// }); // can be used for comunicate two children
+
+// new Vue({
+//   el: '#app',
+//   render: h => h(App)
+// })
+
+// ===============================
 import Vue from 'vue'
 import App from './App.vue'
-import Home from './components/Home.vue'
-
-Vue.component('server-status', Home)
 
 new Vue({
   el: '#app',
