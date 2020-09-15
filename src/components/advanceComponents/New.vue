@@ -16,6 +16,12 @@ export default {
   destroyed() {
     console.log("Component New.vue Destroyed!");
   },
+  deactivated() {
+    console.log("Deactivated!");
+  },
+  activated() {
+    console.log("Activided");
+  },
 };
 </script>
 

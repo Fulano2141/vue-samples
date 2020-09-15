@@ -11,7 +11,9 @@
       <!-- <Game /> -->
       <!-- <server-status></server-status> -->
       <!-- <User /> -->
-      <AppForQuote />
+      <!-- <AppForQuote /> -->
+      <!-- <AppProject /> -->
+      <AppForms />
     </div>
     <!-- <div id="app2">
       <HelloWorld />
@@ -28,7 +30,9 @@
 // import Exercise5 from "./components/basic/Exercise5";
 // import Game from "./components/basic/Game";
 // import User from "./components/users/User";
-import AppForQuote from "./components/advanceComponents/AppForQuote";
+// import AppForQuote from "./components/advanceComponents/AppForQuote";
+// import AppProject from "./components/courseProject/AppProject";
+import AppForms from "./components/Forms/AppForms";
 export default {
   name: "App",
   components: {
@@ -40,7 +44,9 @@ export default {
     // Exercise5,
     // Game,
     // User,
-    AppForQuote,
+    // AppForQuote,
+    // AppProject,
+    AppForms,
   },
   data: () => ({
     // title: "fulano",
