@@ -13,7 +13,9 @@
       <!-- <User /> -->
       <!-- <AppForQuote /> -->
       <!-- <AppProject /> -->
-      <AppForms />
+      <!-- <AppForms /> -->
+      <!-- <AppDir /> -->
+      <AppFil />
     </div>
     <!-- <div id="app2">
       <HelloWorld />
@@ -32,7 +34,8 @@
 // import User from "./components/users/User";
 // import AppForQuote from "./components/advanceComponents/AppForQuote";
 // import AppProject from "./components/courseProject/AppProject";
-import AppForms from "./components/Forms/AppForms";
+// import AppDir from "./components/Directives/AppDir";
+import AppFil from "./components/FiltersAndMixins/AppFil";
 export default {
   name: "App",
   components: {
@@ -46,7 +49,9 @@ export default {
     // User,
     // AppForQuote,
     // AppProject,
-    AppForms,
+    // AppForms,
+    // AppDir,
+    AppFil,
   },
   data: () => ({
     // title: "fulano",
