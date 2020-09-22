@@ -2,6 +2,8 @@
   "name": "vue-project-udemy",
   "version": "0.1.0",
   "private": true,
+  "author": "Cosme Fulano",
+  "description": "Vue2 Examples",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
