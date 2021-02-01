@@ -10,13 +10,19 @@
           <option value="slide">Slide</option>
         </select>
         <br />
-        <button class="btn btn-primary" @click="show = !show">Show Alert</button>
+        <button class="btn btn-primary" @click="show = !show">
+          Show Alert
+        </button>
         <br />
         <br />
         <hr />
         <transition :name="alertAnimation" mode="out-in">
-          <div class="alert alert-info" v-if="show" key="info">This is some info</div>
-          <div class="alert alert-warning" v-else key="warning">This is some warning</div>
+          <div class="alert alert-info" v-if="show" key="info">
+            This is some info
+          </div>
+          <div class="alert alert-warning" v-else key="warning">
+            This is some warning
+          </div>
         </transition>
         <hr />
         <!-- Attached to <select> // dinamic animation -->
@@ -39,7 +45,11 @@
         </transition>
         <hr />
         <!-- Only works with actual link Animation 3.5.X -->
-        <transition appear enter-active-class="animated bounce" leave-active-class="animated shake">
+        <transition
+          appear
+          enter-active-class="animated bounce"
+          leave-active-class="animated shake"
+        >
           <div class="alert alert-info" v-if="show">This is some info</div>
         </transition>
         <hr />
@@ -62,8 +72,14 @@
         <hr />
         <button
           class="btn btn-primary"
-          @click="selectedComponent == 'SuccessAlert'? selectedComponent = 'DangerAlert': selectedComponent = 'SuccessAlert'"
-        >Toggle components</button>
+          @click="
+            selectedComponent == 'SuccessAlert'
+              ? (selectedComponent = 'DangerAlert')
+              : (selectedComponent = 'SuccessAlert')
+          "
+        >
+          Toggle components
+        </button>
         <br />
         <br />
         <transition name="fade" mode="out-in">
@@ -81,7 +97,9 @@
               :key="number"
               @click="removeItem(index)"
               style="cursor: pointer"
-            >{{number}}</li>
+            >
+              {{ number }}
+            </li>
           </transition-group>
         </ul>
       </div>
@@ -90,8 +108,8 @@
 </template>
 
 <script>
-import DangerAlert from "./components/DangerAlert";
-import SuccessAlert from "./components/SuccessAlert";
+import DangerAlert from "../components/Animations/DangerAlert";
+import SuccessAlert from "../components/Animations/SuccessAlert";
 export default {
   data: () => ({
     show: false,

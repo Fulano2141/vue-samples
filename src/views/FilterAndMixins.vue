@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import List from "./List";
-import { fruitMixin } from "../../fruitMixin";
+import List from "../components/FiltersAndMixins/List";
+import { fruitMixin } from "../fruitMixin";
 export default {
   mixins: [fruitMixin],
   data: () => ({

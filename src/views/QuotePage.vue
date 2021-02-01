@@ -7,13 +7,13 @@
         <button @click="selectedComponent = 'appNew'">New</button>
         <!-- <app-quote quote="A wonderful quote!" > -->
         <hr />
-        <p>{{selectedComponent}}</p>
+        <p>{{ selectedComponent }}</p>
         <keep-alive>
           <component :is="selectedComponent">
             <p>Default content</p>
           </component>
         </keep-alive>
-        
+
         <!--  -->
         <!-- <app-quote> -->
         <!-- <h2 slot="title">{{ quoteTitle }}</h2> -->
@@ -29,9 +29,9 @@
 </template>
 
 <script>
-import Quote from "./Quote.vue";
-import Author from "./Author.vue";
-import New from "./New.vue";
+import Quote from "../components/advanced/Quote.vue";
+import Author from "../components/advanced/Author.vue";
+import New from "../components/advanced/New.vue";
 
 export default {
   data: function () {

@@ -1,46 +1,35 @@
-// import Vue from 'vue'
-// import App from './App.vue'
-// import App2 from './App2.vue'
-
-// Vue.config.productionTip = false
-
-// var vm1 = 
-// new Vue({
-//   render: h => h(App),
-// }).$mount('#app')
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import App from './App.vue'
+import {
+  routes
+} from "./router/router"
 
 
-// var vm2 = new Vue({
-//   el: "#apptwo",  // This #apptwo is from index.html
-//   render: g => g(App2),
-// })
+Vue.config.productionTip = false
+Vue.use(VueRouter)
 
-// console.log(vm1.title + " " + vm2.title);
+const router = new VueRouter({
+  routes: routes,
+  mode: "history"
+})
 
-// // https://jsfiddle.net/smax/9a2k6cja/2/
+// https://jsfiddle.net/smax/9a2k6cja/2/
+
 //  =====================================================
-// import Vue from 'vue'
-// import App from './App.vue'
-// import Home from './components/basic/Home.vue'
+import HomePage from './views/HomePage.vue'
 
-// Vue.component('server-status', Home)
+Vue.component('server-status', HomePage)
 
-// export const eventBus = new Vue({
-//   methods: {
-//     changeAge(age) {
-//       this.$emit('ageWasEdited', age);
-//     }
-//   }
-// }); // can be used for comunicate two children
-
-// new Vue({
-//   el: '#app',
-//   render: h => h(App) 
-// })
+export const eventBus = new Vue({
+  methods: {
+    changeAge(age) {
+      this.$emit('ageWasEdited', age);
+    }
+  }
+}); // can be used for comunicate two children
 
 // ===============================
-import Vue from 'vue'
-import App from './App.vue'
 
 // For directives
 Vue.directive('highl', {
@@ -59,7 +48,7 @@ Vue.directive('highlig', {
       el.style.backgroundColor = binding.value;
     } else {
       el.style.color = binding.value;
-    }   //[3]
+    } //[3]
   }
 });
 Vue.directive('highligh', {
@@ -77,14 +66,13 @@ Vue.directive('highligh', {
     }, delay); // [4]
   }
 });
-// 
 
 // For Filters
 Vue.filter('to-lowercase', function (value) {
   return value.toLowerCase();
 });
 // 
-// For Mixins
+// For global Mixins
 Vue.mixin({
   created() {
     console.log('global mixin')
@@ -93,5 +81,6 @@ Vue.mixin({
 // 
 new Vue({
   el: '#app',
+  router,
   render: h => h(App)
 })

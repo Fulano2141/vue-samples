@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import QuoteGrid from "./components/QuoteGrid";
-import NewQuote from "./components/NewQuote";
-import Header from "./components/Header";
+import QuoteGrid from "../components/courseProject/QuoteGrid";
+import NewQuote from "../components/courseProject/NewQuote";
+import Header from "../components/courseProject/Header";
 
 export default {
   data: () => ({

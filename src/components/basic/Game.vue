@@ -6,8 +6,15 @@
         <div class="healthbar">
           <div
             class="healthbar text-center"
-            :style="{backgroundColor: 'green', margin: 0, color: 'white', width: playerHealth + '%'}"
-          >{{playerHealth}}</div>
+            :style="{
+              backgroundColor: 'green',
+              margin: 0,
+              color: 'white',
+              width: playerHealth + '%',
+            }"
+          >
+            {{ playerHealth }}
+          </div>
         </div>
       </div>
       <div class="small-6 columns">
@@ -15,8 +22,15 @@
         <div class="healthbar">
           <div
             class="healthbar text-center"
-            :style="{backgroundColor: 'green', margin: 0, color: 'white', width: monsterHealth+'%'}"
-          >{{monsterHealth}}</div>
+            :style="{
+              backgroundColor: 'green',
+              margin: 0,
+              color: 'white',
+              width: monsterHealth + '%',
+            }"
+          >
+            {{ monsterHealth }}
+          </div>
         </div>
       </div>
     </section>
@@ -28,7 +42,9 @@
     <section class="row controls" v-if="isRunnig">
       <div class="small-12 columns">
         <button id="attack" @click="attack()">ATTACK</button>
-        <button id="special-attack" @click="specialAttack()">SPECIAL ATTACK</button>
+        <button id="special-attack" @click="specialAttack()">
+          SPECIAL ATTACK
+        </button>
         <button id="heal" @click="heal()">HEAL</button>
         <button id="give-up" @click="giveUp()">GIVE UP</button>
       </div>
@@ -39,8 +55,13 @@
           <li
             v-for="(turn, index) in turns"
             :key="index"
-            :class="{'player-turn': turn.isPlayer, 'monster-turn': !turn.isPlayer}"
-          >{{turn.text}}</li>
+            :class="{
+              'player-turn': turn.isPlayer,
+              'monster-turn': !turn.isPlayer,
+            }"
+          >
+            {{ turn.text }}
+          </li>
         </ul>
       </div>
     </section>
@@ -136,7 +157,7 @@ export default {
 </script>
 
 <style>
-@import url("../assets/foundation.min.css");
+@import url("../../assets/foundation.min.css");
 .text-center {
   text-align: center;
 }
