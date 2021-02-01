@@ -1,4 +1,4 @@
-# vue-project-samples
+# vue-project-samples on Vue v2
 
 ## Project setup
 ```
@@ -22,3 +22,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+See [VueRouter](https://router.vuejs.org/)
