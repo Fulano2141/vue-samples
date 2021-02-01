@@ -8,15 +8,17 @@
       <router-link to="/conditionals">Conditionals</router-link> |
       <router-link to="/loops">Loops</router-link> |
       <router-link to="/exercise5">Sample 2</router-link> |
-      <router-link to="/game1">Game</router-link> |
-      <router-link to="/user">User</router-link> |
-      <router-link to="/animation">Animation</router-link>
+      <router-link to="/user">User</router-link>
+
       <br />
+
+      <router-link to="/game1">Game</router-link> |
       <router-link to="/quotes">Quotes</router-link> |
       <router-link to="/project">Project</router-link> |
       <router-link to="/forms">Forms</router-link> |
       <router-link to="/directives">Directives</router-link> |
-      <router-link to="/filmix">Filters And Mixins</router-link>
+      <router-link to="/filmix">Filters And Mixins</router-link> |
+      <router-link to="/animation">Animation</router-link>
     </div>
   </div>
 </template>
